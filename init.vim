@@ -35,3 +35,10 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %" set leader key
+
+call plug#begin(stdpath('data').'/plugged')
+
+  Plug 'mcchrish/nnn.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
