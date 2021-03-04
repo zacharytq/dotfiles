@@ -40,7 +40,10 @@ call plug#begin(stdpath('data').'/plugged')
 
   Plug 'mcchrish/nnn.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'sheeran/vim-polyglot'
+  Plug 'sheerun/vim-polyglot'
   Plug 'junegunn/fzf'
 
 call plug#end()
+
+" Change color of line numbers to white
+hi LineNr     ctermfg=7
