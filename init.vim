@@ -40,5 +40,6 @@ call plug#begin(stdpath('data').'/plugged')
 
   Plug 'mcchrish/nnn.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'sheeran/vim-polyglot'
 
 call plug#end()
