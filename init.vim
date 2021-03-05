@@ -42,6 +42,7 @@ call plug#begin(stdpath('data').'/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'sheerun/vim-polyglot'
   Plug 'junegunn/fzf'
+  Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
