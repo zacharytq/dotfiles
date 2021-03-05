@@ -51,4 +51,4 @@ hi LineNr     ctermfg=7
 
 " Change color of pmenu
 hi Pmenu ctermbg=8
-hi Pmenu ctermfg=1
+hi Pmenu ctermfg=7
