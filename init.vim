@@ -48,3 +48,7 @@ call plug#end()
 
 " Change color of line numbers to white
 hi LineNr     ctermfg=7
+
+" Change color of pmenu
+hi Pmenu ctermbg=8
+hi Pmenu ctermfg=1
