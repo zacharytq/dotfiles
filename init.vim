@@ -52,3 +52,8 @@ hi LineNr     ctermfg=7
 " Change color of pmenu
 hi Pmenu ctermbg=8
 hi Pmenu ctermfg=7
+
+" Change color of tabline
+hi TabLineFill cterm=NONE
+hi TabLineSel ctermbg=NONE cterm=BOLD ctermfg=11
+hi TabLine cterm=NONE ctermbg=NONE ctermfg=8
