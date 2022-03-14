@@ -25,7 +25,8 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 # Drop into fish if parent process is not fish
-if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" && -z ${BASH_EXECUTION_STRING} ]]
+# Below line is a work around for using ps on mac
+if [[ $(ps -p $PPID -o command | tail -n +2) != "fish" ]]
 then
 	exec fish
 fi
