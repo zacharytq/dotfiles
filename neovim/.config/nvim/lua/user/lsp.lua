@@ -20,7 +20,7 @@ lspconfig.jsonls.setup{
     json = {
       schemas = {
         description = 'ARM template schema',
-        fileMatch = {'azuredeploy-*.json'},
+        fileMatch = {'azuredeploy-infrastructure.json'},
         url = "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
       }
     }
