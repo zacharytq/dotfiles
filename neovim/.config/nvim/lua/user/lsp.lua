@@ -9,3 +9,20 @@ lspconfig.powershell_es.setup{
   -- Bundle path configured for work computer
   bundle_path = '/Users/zachary.quinn/src/.powershell-editor-services/PowerShellEditorServices'
 }
+
+-- JSON setup
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lspconfig.jsonls.setup{
+  capabilities = capabilities,
+  settings = {
+    json = {
+      schemas = {
+        description = 'ARM template schema',
+        fileMatch = {'azuredeploy-*.json'},
+        url = "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
+      }
+    }
+  }
+}
