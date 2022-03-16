@@ -26,3 +26,6 @@ lspconfig.jsonls.setup{
     }
   }
 }
+
+--Bash setup
+lspconfig.bashls.setup{}
