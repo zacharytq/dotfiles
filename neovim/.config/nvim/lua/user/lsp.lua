@@ -29,3 +29,7 @@ lspconfig.jsonls.setup{
 
 --Bash setup
 lspconfig.bashls.setup{}
+
+-- Python setup
+lspconfig.pylsp.setup{}
+
